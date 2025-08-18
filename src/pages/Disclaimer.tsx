@@ -26,7 +26,7 @@ const Disclaimer = () => {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">1. No Recovery Guarantees</h2>
               <p>
-                Forensic Lab Team does not guarantee the recovery of lost funds, stolen assets, or 
+                Sentinel Investigation does not guarantee the recovery of lost funds, stolen assets, or 
                 any specific financial outcomes. Our role is to investigate, analyze evidence, and 
                 provide professional reports based on available information.
               </p>
@@ -91,7 +91,7 @@ const Disclaimer = () => {
               <p>
                 Questions about this disclaimer should be directed to:
                 <br />
-                <strong>Email:</strong> info@forensiclabteam.com
+                <strong>Email:</strong> support@sentinelinvestigation.com
               </p>
             </section>
           </div>

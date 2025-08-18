@@ -17,7 +17,7 @@ const TermsOfService = () => {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">1. Service Agreement</h2>
               <p>
-                By engaging Forensic Lab Team for investigation services, you agree to these terms and 
+                By engaging Sentinel Investigation for investigation services, you agree to these terms and 
                 conditions. Our services include cyber investigations, digital forensics, crypto asset 
                 tracing, and security assessments.
               </p>
@@ -80,7 +80,7 @@ const TermsOfService = () => {
               <p>
                 For questions about these terms or our services:
                 <br />
-                <strong>Email:</strong> legal@forensiclabteam.com
+                <strong>Email:</strong> support@sentinelinvestigation.com
               </p>
             </section>
           </div>

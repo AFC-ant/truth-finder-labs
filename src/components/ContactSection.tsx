@@ -64,10 +64,10 @@ const ContactSection = () => {
               </CardHeader>
               <CardContent>
                 <a 
-                  href="mailto:contact@forensiclabteam.com" 
+                  href="mailto:support@sentinelinvestigation.com" 
                   className="text-primary hover:text-accent transition-colors text-lg font-medium"
                 >
-                  contact@forensiclabteam.com
+                  support@sentinelinvestigation.com
                 </a>
               </CardContent>
             </Card>

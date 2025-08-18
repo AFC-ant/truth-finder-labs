@@ -9,16 +9,16 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-8 h-8 bg-primary-foreground rounded-md flex items-center justify-center">
-                <span className="text-primary font-bold text-sm">FL</span>
+                <span className="text-primary font-bold text-sm">SI</span>
               </div>
-              <span className="font-semibold text-xl">Forensic Lab Team</span>
+              <span className="font-semibold text-xl">Sentinel Investigation</span>
             </div>
             <p className="text-primary-foreground/80 mb-4 max-w-md">
               Professional cyber investigations, digital forensics, and crypto asset tracing services. 
               Trusted worldwide for confidential and legally admissible investigations.
             </p>
             <p className="text-primary-foreground/60 text-sm">
-              © 2024 Forensic Lab Team. All rights reserved.
+              © 2024 Sentinel Investigation. All rights reserved.
             </p>
           </div>
           
@@ -63,7 +63,7 @@ const Footer = () => {
               </li>
               <li>
                 <a 
-                  href="mailto:contact@forensiclabteam.com"
+                  href="mailto:support@sentinelinvestigation.com"
                   className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                 >
                   Contact Us

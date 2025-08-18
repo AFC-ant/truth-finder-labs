@@ -7,9 +7,9 @@ const Navigation = () => {
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link to="/" className="flex items-center space-x-2">
           <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-sm">FL</span>
+            <span className="text-primary-foreground font-bold text-sm">SI</span>
           </div>
-          <span className="font-semibold text-xl text-foreground">Forensic Lab Team</span>
+          <span className="font-semibold text-xl text-foreground">Sentinel Investigation</span>
         </Link>
         
         <div className="hidden md:flex items-center space-x-8">

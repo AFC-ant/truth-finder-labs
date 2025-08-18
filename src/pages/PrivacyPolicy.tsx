@@ -75,7 +75,7 @@ const PrivacyPolicy = () => {
               <p>
                 If you have questions about this Privacy Policy, please contact us at:
                 <br />
-                <strong>Email:</strong> privacy@forensiclabteam.com
+                <strong>Email:</strong> support@sentinelinvestigation.com
               </p>
             </section>
           </div>
