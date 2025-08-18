@@ -29,11 +29,11 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-background">
+    <section id="services" className="py-20 bg-gradient-section">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Our Services
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-glow">
+            Our <span className="text-primary animate-cyber-pulse">Services</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Comprehensive digital investigation and forensic services tailored to your specific needs
@@ -42,9 +42,18 @@ const ServicesSection = () => {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {services.map((service, index) => (
-            <Card key={index} className="shadow-card hover:shadow-professional transition-shadow duration-300">
+            <Card 
+              key={index} 
+              className="shadow-card hover:shadow-cyber transition-all duration-300 border-border/50 hover:border-primary/30 animate-fade-in bg-card/80 backdrop-blur-sm"
+              style={{ animationDelay: `${index * 0.2}s` }}
+            >
               <CardHeader>
-                <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mb-4">
+                <div className={`w-12 h-12 ${
+                  index === 0 ? 'bg-primary/10 cyber-glow' :
+                  index === 1 ? 'bg-cyber-green/10' :
+                  index === 2 ? 'bg-cyber-purple/10' :
+                  'bg-accent/10'
+                } rounded-lg flex items-center justify-center mb-4 hover:shadow-neon transition-all duration-300`}>
                   <span className="text-2xl">{service.icon}</span>
                 </div>
                 <CardTitle className="text-xl font-semibold">{service.title}</CardTitle>
@@ -56,7 +65,12 @@ const ServicesSection = () => {
                 <ul className="space-y-2">
                   {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center text-sm text-muted-foreground">
-                      <span className="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                      <span className={`w-2 h-2 ${
+                        featureIndex === 0 ? 'bg-primary' :
+                        featureIndex === 1 ? 'bg-cyber-green' :
+                        featureIndex === 2 ? 'bg-accent' :
+                        'bg-cyber-purple'
+                      } rounded-full mr-3 animate-neon-flicker`}></span>
                       {feature}
                     </li>
                   ))}

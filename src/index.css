@@ -2,52 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Professional Cyber Investigation Design System */
+/* Cyber Investigation Design System */
 
 @layer base {
   :root {
-    /* Professional color palette for cyber investigations */
-    --background: 0 0% 100%;
-    --foreground: 215 25% 15%;
+    /* Cyber-themed color palette */
+    --background: 220 25% 8%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 215 25% 15%;
+    --card: 220 25% 10%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 15%;
+    --popover: 220 25% 10%;
+    --popover-foreground: 0 0% 95%;
 
-    /* Professional dark blue - primary brand color */
-    --primary: 215 85% 20%;
-    --primary-foreground: 0 0% 100%;
+    /* Electric blue primary */
+    --primary: 200 100% 50%;
+    --primary-foreground: 220 25% 8%;
 
-    /* Light gray for secondary elements */
-    --secondary: 210 15% 95%;
-    --secondary-foreground: 215 25% 15%;
+    /* Dark secondary */
+    --secondary: 220 25% 15%;
+    --secondary-foreground: 0 0% 90%;
 
-    /* Subtle gray tones */
-    --muted: 210 15% 95%;
-    --muted-foreground: 215 15% 45%;
+    /* Muted grays */
+    --muted: 220 25% 12%;
+    --muted-foreground: 0 0% 70%;
 
-    /* Accent cyan for tech highlights */
-    --accent: 195 85% 45%;
-    --accent-foreground: 0 0% 100%;
+    /* Neon cyan accent */
+    --accent: 180 100% 60%;
+    --accent-foreground: 220 25% 8%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 85% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 210 20% 90%;
-    --input: 210 20% 95%;
-    --ring: 215 85% 20%;
+    --border: 220 25% 20%;
+    --input: 220 25% 15%;
+    --ring: 200 100% 50%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    /* Professional gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(215 85% 20%), hsl(220 75% 30%));
-    --gradient-section: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 15% 98%));
+    /* Cyber gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(220 25% 8%), hsl(240 30% 15%), hsl(200 100% 20%));
+    --gradient-cyber: linear-gradient(45deg, hsl(200 100% 50% / 0.1), hsl(280 100% 50% / 0.1));
+    --gradient-neon: linear-gradient(90deg, hsl(200 100% 50%), hsl(280 100% 60%));
+    --gradient-section: linear-gradient(180deg, hsl(220 25% 8%), hsl(220 25% 10%));
     
-    /* Shadows for depth */
-    --shadow-professional: 0 4px 20px hsl(215 25% 15% / 0.1);
-    --shadow-card: 0 2px 10px hsl(215 25% 15% / 0.08);
+    /* Cyber shadows with glow */
+    --shadow-cyber: 0 0 20px hsl(200 100% 50% / 0.3), 0 4px 20px hsl(220 25% 5% / 0.5);
+    --shadow-neon: 0 0 10px hsl(200 100% 50% / 0.5), 0 0 20px hsl(200 100% 50% / 0.3);
+    --shadow-card: 0 4px 20px hsl(220 25% 5% / 0.3), 0 0 10px hsl(200 100% 50% / 0.1);
     
     /* Typography weights */
     --font-weight-normal: 400;
@@ -55,55 +58,62 @@
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     
-    /* Transitions */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Smooth cyber transitions */
+    --transition-cyber: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --transition-glow: box-shadow 0.3s ease, text-shadow 0.3s ease;
     
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Additional cyber colors */
+    --cyber-green: 120 100% 50%;
+    --cyber-purple: 280 100% 60%;
+    --cyber-orange: 30 100% 60%;
+    
+    --sidebar-background: 220 25% 10%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 200 100% 50%;
+    --sidebar-primary-foreground: 220 25% 8%;
+    --sidebar-accent: 220 25% 15%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 220 25% 20%;
+    --sidebar-ring: 200 100% 50%;
   }
 
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+  .light {
+    --background: 220 25% 8%;
+    --foreground: 0 0% 98%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 220 25% 10%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 220 25% 10%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 200 100% 50%;
+    --primary-foreground: 220 25% 8%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 220 25% 15%;
+    --secondary-foreground: 0 0% 90%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 220 25% 12%;
+    --muted-foreground: 0 0% 70%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 180 100% 60%;
+    --accent-foreground: 220 25% 8%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 220 25% 20%;
+    --input: 220 25% 15%;
+    --ring: 200 100% 50%;
+    
+    --sidebar-background: 220 25% 10%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 200 100% 50%;
+    --sidebar-primary-foreground: 220 25% 8%;
+    --sidebar-accent: 220 25% 15%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 220 25% 20%;
+    --sidebar-ring: 200 100% 50%;
   }
 }
 
@@ -114,5 +124,21 @@
 
   body {
     @apply bg-background text-foreground;
+    background-image: 
+      radial-gradient(circle at 20% 80%, hsl(200 100% 50% / 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, hsl(280 100% 60% / 0.05) 0%, transparent 50%);
+  }
+  
+  /* Cyber glow effects */
+  .cyber-glow {
+    box-shadow: var(--shadow-cyber);
+  }
+  
+  .neon-glow {
+    box-shadow: var(--shadow-neon);
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 10px currentColor;
   }
 }

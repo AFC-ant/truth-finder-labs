@@ -61,14 +61,20 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				'cyber-green': 'hsl(var(--cyber-green))',
+				'cyber-purple': 'hsl(var(--cyber-purple))',
+				'cyber-orange': 'hsl(var(--cyber-orange))'
 			},
 			backgroundImage: {
 				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-cyber': 'var(--gradient-cyber)',
+				'gradient-neon': 'var(--gradient-neon)',
 				'gradient-section': 'var(--gradient-section)'
 			},
 			boxShadow: {
-				'professional': 'var(--shadow-professional)',
+				'cyber': 'var(--shadow-cyber)',
+				'neon': 'var(--shadow-neon)',
 				'card': 'var(--shadow-card)'
 			},
 			fontWeight: {
@@ -78,7 +84,8 @@ export default {
 				'bold': 'var(--font-weight-bold)'
 			},
 			transitionProperty: {
-				'smooth': 'var(--transition-smooth)'
+				'cyber': 'var(--transition-cyber)',
+				'glow': 'var(--transition-glow)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -111,12 +118,43 @@ export default {
 						opacity: '1',
 						transform: 'translateY(0)'
 					}
+				},
+				'cyber-pulse': {
+					'0%, 100%': {
+						boxShadow: '0 0 5px hsl(var(--primary)), 0 0 10px hsl(var(--primary)), 0 0 15px hsl(var(--primary))'
+					},
+					'50%': {
+						boxShadow: '0 0 10px hsl(var(--primary)), 0 0 20px hsl(var(--primary)), 0 0 30px hsl(var(--primary))'
+					}
+				},
+				'neon-flicker': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.8' },
+					'75%': { opacity: '0.9' }
+				},
+				'slide-up': {
+					from: { transform: 'translateY(100%)', opacity: '0' },
+					to: { transform: 'translateY(0)', opacity: '1' }
+				},
+				'glow-pulse': {
+					'0%, 100%': { 
+						textShadow: '0 0 5px currentColor, 0 0 10px currentColor',
+						transform: 'scale(1)'
+					},
+					'50%': { 
+						textShadow: '0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor',
+						transform: 'scale(1.02)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'fade-in': 'fade-in 0.6s ease-out'
+				'fade-in': 'fade-in 0.6s ease-out',
+				'cyber-pulse': 'cyber-pulse 2s ease-in-out infinite',
+				'neon-flicker': 'neon-flicker 3s ease-in-out infinite',
+				'slide-up': 'slide-up 0.5s ease-out',
+				'glow-pulse': 'glow-pulse 2s ease-in-out infinite'
 			}
 		}
 	},
