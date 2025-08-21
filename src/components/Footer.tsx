@@ -8,17 +8,19 @@ const Footer = () => {
           {/* Company Info */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4 hover:scale-105 transition-transform">
-              <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center cyber-glow">
-                <span className="text-primary-foreground font-bold text-sm">SI</span>
-              </div>
-              <span className="font-semibold text-xl text-glow">Sentinel Investigation</span>
+              <img 
+                src="/lovable-uploads/523f4a01-3b64-4ec3-b99b-c37e5bbf2f5f.png" 
+                alt="AFC Logo" 
+                className="w-10 h-10 cyber-glow"
+              />
+              <span className="font-semibold text-xl text-glow">AFC</span>
             </div>
             <p className="text-muted-foreground mb-4 max-w-md">
               Professional cyber investigations, digital forensics, and crypto asset tracing services. 
               Trusted worldwide for confidential and legally admissible investigations.
             </p>
             <p className="text-muted-foreground/80 text-sm">
-              © 2024 Sentinel Investigation. All rights reserved.
+              © 2024 AFC. All rights reserved.
             </p>
           </div>
           
@@ -63,7 +65,7 @@ const Footer = () => {
               </li>
               <li>
                 <a 
-                  href="mailto:support@sentinelinvestigation.com"
+                  href="mailto:support@afc.com"
                   className="text-muted-foreground hover:text-foreground transition-colors relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-primary after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full"
                 >
                   Contact Us
