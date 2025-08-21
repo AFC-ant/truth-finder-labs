@@ -6,9 +6,11 @@ const Navigation = () => {
     <nav className="bg-background/95 backdrop-blur-md border-b border-border sticky top-0 z-50 shadow-card">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link to="/" className="flex items-center space-x-2 hover:scale-105 transition-transform">
-          <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center cyber-glow">
-            <span className="text-primary-foreground font-bold text-sm">AFC</span>
-          </div>
+          <img 
+            src="/lovable-uploads/523f4a01-3b64-4ec3-b99b-c37e5bbf2f5f.png" 
+            alt="AFC Logo" 
+            className="w-10 h-10 cyber-glow"
+          />
           <span className="font-semibold text-xl text-foreground hover:text-primary transition-colors">AFC</span>
         </Link>
         
