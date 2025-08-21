@@ -9,7 +9,7 @@ const Navigation = () => {
           <img 
             src="/lovable-uploads/523f4a01-3b64-4ec3-b99b-c37e5bbf2f5f.png" 
             alt="AFC Logo" 
-            className="w-10 h-10 cyber-glow"
+            className="w-16 h-16 cyber-glow"
           />
           <span className="font-semibold text-xl text-foreground hover:text-primary transition-colors">AFC</span>
         </Link>
