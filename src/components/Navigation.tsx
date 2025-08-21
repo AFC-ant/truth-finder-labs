@@ -11,7 +11,6 @@ const Navigation = () => {
             alt="AFC Logo" 
             className="w-16 h-16 cyber-glow"
           />
-          <span className="font-semibold text-xl text-foreground hover:text-primary transition-colors">AFC</span>
         </Link>
         
         <div className="hidden md:flex items-center space-x-8">
